@@ -1,0 +1,80 @@
+Bash_hw_1
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir mainFolder
+3) Зайти в папку
+cd mainFolder
+4) Создать 3 папки
+mkdir folderA folderB folderC
+5) Зайти в любоую папку
+cd folderA
+6) Создать 5 файлов (3 txt, 2 json)
+touch file1.txt file2.txt file3.txt file4.json file5.json
+7) Создать 3 папки
+mkdir folder1 folder2 folder3
+8. Вывести список содержимого папки
+ls -la 
+9) Открыть любой txt файл
+cat file1.txt
+10) + написать туда что-нибудь, любой текст.
+cat >> file1.txt
+11) + сохранить и выйти.
+ctr + c
+В случае если мы используем vim, то клавиша i - insert mod, вносим свои правки и изменения, после чего : и wq (выход с сохранением)
+12) Выйти из папки на уровень выше
+cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv folderA/file1.txt folderB/file1.txt
+mv folderA/file2.txt folderB/file2.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp folderA/file3.txt folderB/file3.txt
+cp folderA/file4.json folderB/file4.json
+15) Найти файл по имени
+find -name file1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+ls
+17) вывести несколько первых строк из текстового файла
+cd folderB
+cat file1.txt - просматриваем наш файл
+Далее 
+grep hello file1.txt
+grep 1 file1.txt
+18) вывести несколько последних строк из текстового файла
+head -4 file1.txt
+tail -4 file1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+touch file6.txt
+cat >> file6.txt
+"много текста"
+less file6.txt
+20) вывести дату и время
+date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+сurl http://162.55.220.72:5005/terminal-hw-request
+curl "http://162.55.220.72:5005/get_metho?name=Yan&age=22"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+touch script.sh - 
+chmod +x ./script.sh 
+
+cat >> script.sh
+
+mkdir folderHW
+cd folderHW
+mkdir folder1 folder2 folder3
+cd folder1
+touch file1.txt file2.txt file3.txt file4.json file5.json
+mkdir folder11 folder22 folder33
+ls -la 
+mv folder11/file1.txt folder22/file1.txt
+mv folder11/file2.txt folder22/file2.txt
+
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
