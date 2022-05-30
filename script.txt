@@ -1,0 +1,11 @@
+cat >> script.sh
+
+mkdir folderHW
+cd folderHW
+mkdir folder1 folder2 folder3
+cd folder1
+touch file1.txt file2.txt file3.txt file4.json file5.json
+mkdir folder11 folder22 folder33
+ls -la 
+mv folder11/file1.txt folder22/file1.txt
+mv folder11/file2.txt folder22/file2.txt
